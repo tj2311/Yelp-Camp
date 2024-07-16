@@ -17,6 +17,9 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const dbUrl =  process.env.DB_URL;
 
+console.log(dbUrl)
+console.log(`the token is:${process.env.DB_URL}`)
+
 
 const campgroundsRoutes = require('./routes/campgrounds');
 const reviewsRoutes = require('./routes/reviews');
